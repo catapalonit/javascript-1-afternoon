@@ -8,7 +8,7 @@ var myName = "Bryan";
 
 //Create a variable called myAge that is a number data type
 
-var myAge = "26"
+var myAge = 26
 
 //////////////////PROBLEM 3////////////////////
 
@@ -35,9 +35,8 @@ var devMountainGoal = null;
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-function greeting() {
-var name = "Bryan";
-return name + greeting
+function greeting(name) {
+return "Hello, " + name
 
 }
 
@@ -47,21 +46,23 @@ return name + greeting
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
-//Code Here
+var newGreeting = function(name) {
+return "Hello, " + name
+}
 
 //////////////////PROBLEM 8////////////////////
 
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
-//Code Here
+// have not looked into arrow functions yet
 
 //////////////////PROBLEM 9////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-var groceriesArray = ["apples", "milk", "eggs", "bread"];
+var groceries = ["apples", "milk", "eggs", "bread"];
 
 //////////////////PROBLEM 10////////////////////
 
@@ -70,12 +71,18 @@ var groceriesArray = ["apples", "milk", "eggs", "bread"];
 //name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
 
-//Code Here
+var dog = {
+  name : "Yoshi",
+  color : "Black",
+  age : 7,
+  goodBoy : true
+}
+
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-//Code Here
+var devMountainClassPet = dog.name;
 
 //////////////////PROBLEM 11////////////////////
 
@@ -86,14 +93,14 @@ var groceriesArray = ["apples", "milk", "eggs", "bread"];
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in
 
-function nameCheck(){
+function nameCheck(name) {
   if (name === "Steven") {
     return "What is up Steven?"
   }
   else if (name === "Bryan") {
     return "Hey Bryan!"
   }
-  else return "Cool name, NAMEPARAM"
+  else return "Cool name, " + name
 }
 
 //////////////////PROBLEM 12////////////////////
@@ -102,12 +109,14 @@ function nameCheck(){
 // that will be numbers.
 // The add function should return the two parameters added together
 
-//Code Here
+function add(num1, num2){
+  var add = num1 + num2
+  return add
+}
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-//Code Here
 
 //////////////////PROBLEM 13////////////////////
 
@@ -118,7 +127,18 @@ function nameCheck(){
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-// Code here
+function faveColorFinder(color){
+  if (color === "red") {
+    return "red is a great color"
+  }
+  else if (color === "green") {
+    return "green is a solid favorite color"
+  }
+  else if (color === "black") {
+    return "so trendy"
+  }
+  else return "you need to evaluate your favorite color choice"
+}
 
 //////////////////PROBLEM 14////////////////////
 
@@ -142,28 +162,28 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 15////////////////////
 
 //Create a variable called age with your age assigned to you
 
-// Code Here
+var age = 26; 
 
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
-// Code Here
+var age = age++
 
 // Good news! We can live forever. Set your age to 999
 
-// Code Here
+var age = 999;
