@@ -55,7 +55,7 @@ return "Hello, " + name
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
-// have not looked into arrow functions yet
+var finalGreeting = name => "Hello, " + name;
 
 //////////////////PROBLEM 9////////////////////
 
@@ -116,6 +116,9 @@ function add(num1, num2){
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
+
+var mathSum = 3 + 4; // I'm 100% sure this is not correct
+// please tell me how to do this correctly
 
 
 //////////////////PROBLEM 13////////////////////
