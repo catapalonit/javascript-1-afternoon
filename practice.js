@@ -118,7 +118,7 @@ function add(num1, num2){
 //storing the result in the variable mathSum.
 
 var mathSum = 3 + 4; // I'm 100% sure this is not correct
-// please tell me how to do this correctly
+// please tell me how to do this correctly 
 
 
 //////////////////PROBLEM 13////////////////////
